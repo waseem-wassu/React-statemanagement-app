@@ -33,9 +33,9 @@ jobs:
           cmd: install
       - name:  Creating build
         run: yarn build
-              
+
  # Runs a set of commands using the runners shell
       - name: Installing surge
         run: npm install -g surge
       -  name: deploying using surge
-         run: surge ./build http://http://waseem-contextapi_reducer.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
+         run: surge ./build http://http:waseem-contextapi_reducer.surge.sh/ --token ${{ secrets.SURGE_TOKEN }}
